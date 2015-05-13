@@ -6,11 +6,26 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		90275BD51B02ECCE0049B9EF /* AppDelegateNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegateNotification.m; path = Classes/AppDelegateNotification.m; sourceTree = "<group>"; };
+		90275BD61B02ECD80049B9EF /* AppDelegateNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegateNotification.h; path = Classes/AppDelegateNotification.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		90275BCD1B02EC950049B9EF = {
 			isa = PBXGroup;
 			children = (
+				90275BD41B02ECA20049B9EF /* Classes */,
 			);
+			sourceTree = "<group>";
+		};
+		90275BD41B02ECA20049B9EF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				90275BD51B02ECCE0049B9EF /* AppDelegateNotification.m */,
+				90275BD61B02ECD80049B9EF /* AppDelegateNotification.h */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
