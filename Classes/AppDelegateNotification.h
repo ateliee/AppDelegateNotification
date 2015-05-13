@@ -37,7 +37,7 @@ typedef NS_OPTIONS(NSUInteger, PushNotificationType) {
 @property (strong, nonatomic) UIWindow *window;
 
 @property(strong,nonatomic) NSString* appDeviceToken;
-@property(strong,nonatomic) id<FWPushNotification> notificationCallback;
+@property(strong,nonatomic) id<PushNotification> notificationCallback;
 
 // APNSへリクエスト
 -(BOOL) initNotification:(PushNotificationType) types callback:(id<PushNotification>) callback;
