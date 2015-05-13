@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.authors      = {'ateliee' => 'info@ateliee.com'}
+  s.homepage     = 'http://ateliee.com'
   s.license      = { :type => 'License, Version 1.0', :text => <<-LICENSE
     Licensed under the License, Version 1.0 (the "License");
     you may not use this file except in compliance with the License.
