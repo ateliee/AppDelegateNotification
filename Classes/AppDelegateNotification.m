@@ -191,11 +191,13 @@ NSString* const NotificationCallback = @"AppDelegate-NotificationCallback";
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
     
     NSString *devToken = [[[[deviceToken description] stringByReplacingOccurrencesOfString:@"<" withString:@""]stringByReplacingOccurrencesOfString:@">" withString:@""]stringByReplacingOccurrencesOfString:@" " withString:@""];
-    // デバイストークンを保存
-    [self setAppDeviceToken:devToken];
-    
-    // デバイストークンの登録
-    [self.notificationCallback didRegistDeviceToken:application deviceToken:devToken];
+    NSString* defaultDevToken = [self appDeviceToken];
+    if (!defaultDevToken || [defaultDevToken isEqualToString:@""]) {
+        // デバイストークンを保存
+        [self setAppDeviceToken:devToken];
+        // デバイストークンの登録
+        [self.notificationCallback didRegistDeviceToken:application deviceToken:devToken];
+    }
 }
 
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
