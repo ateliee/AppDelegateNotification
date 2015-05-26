@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AppDelegateNotification'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.summary      = 'Notification Classes.'
   s.description  = <<-DESC
                     IOS7,8 Support Notification.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => 'https://github.com/ateliee/AppDelegateNotification.git', :tag => '1.0.0' }
+  s.source       = { :git => 'https://github.com/ateliee/AppDelegateNotification.git', :tag => '1.0.1' }
   s.source_files  = 'Classes', 'Classes/*.{h,m}'
   s.requires_arc  = true 
 end
